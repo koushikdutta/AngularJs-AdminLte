@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <!--header section-->
+    <ng-include src="'Content/Js/Apps/templates/partials/header.tpl.html'"></ng-include>
+    <!--end header-->
+    <!-- Left side column. contains the logo and sidebar -->
+    <ng-include src="'Content/Js/Apps/templates/partials/leftbar.tpl.html'"></ng-include>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+        <!-- Main content -->
+        <div ng-switch on="dash_state" ng-init="init()">
+            <div ng-switch-when="JointJsView">
+                <ng-include src="'Content/Js/Apps/templates/partials/dashboardView.tpl.html'"></ng-include>
+            </div>
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <ng-include src="'Content/Js/Apps/templates/partials/footer.tpl.html'"></ng-include>
+</div>
+<!-- ./wrapper -->

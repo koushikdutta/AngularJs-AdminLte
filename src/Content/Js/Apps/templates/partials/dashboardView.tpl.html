@@ -1,0 +1,25 @@
+<div data-ng-controller="GraphCtrl">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            JointJs
+            <small>control panel</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">JointJs</li>
+        </ol>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-md-9">
+                <ng-include src="'Content/Js/Apps/templates/partials/diagram.tpl.html'"></ng-include>
+            </div>
+            <div class="col-md-3">
+                <!-- API-CALL-FLOW -->
+                <ng-include src="'Content/Js/Apps/templates/partials/output.tpl.html'"></ng-include>
+                <!-- /.box -->
+            </div>
+        </div>
+    </section>
+</div>

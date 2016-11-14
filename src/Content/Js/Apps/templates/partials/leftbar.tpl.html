@@ -1,0 +1,79 @@
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="Content/Images/avatar.png" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>Koushik Dutta</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+        </div>
+        <!-- left hand bar -->
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Search...">
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+        <!-- /.search form -->
+        <ul class="sidebar-menu">
+            <li ng-class="{active: (left_bar_state == 'JointJsView')}">
+                <a href="#/app/dashboard">
+                    <i class="fa fa-dashboard"></i> <span>JoinJs Example</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </span>
+                </a>
+            </li>
+            <li ng-class="{active: (left_bar_state == 'ModelDialog')}" class="treeview" ng-click="ModelDialogView()">
+                <a href="#/app/dashboard">
+                    <i class="fa fa-user"></i> <span>Model Dialog Example</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </span>
+                </a>
+            </li>
+            <li ng-class="{active: (left_bar_state == 'NgTableView')}" class="treeview">
+                <a href="#/app/ngtable">
+                    <i class="fa fa-cloud"></i> <span>Ng Table Example</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </span>
+                </a>
+            </li>
+            <li ng-class="{active: (left_bar_state == 'Link3View')}" class="treeview">
+                <a href="#/app/dashboard">
+                    <i class="fa fa-paper-plane-o"></i> <span>Demo Link 3</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </span>
+                </a>
+            </li>
+            <li ng-class="{active: (left_bar_state == 'Link4')}" class="treeview">
+                <a href="#/app/dashboard">
+                    <i class="fa fa-connectdevelop"></i> <span>Demo Link 4</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </span>
+                </a>
+            </li>
+            <li ng-class="{active: (left_bar_state == 'Link5View')}" class="treeview">
+                <a href="#/app/dashboard">
+                    <i class="fa fa-laptop"></i> <span>Demo Link 5</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <!-- /.left hand bar -->
+    </section>
+    <!-- /.sidebar -->
+</aside>
