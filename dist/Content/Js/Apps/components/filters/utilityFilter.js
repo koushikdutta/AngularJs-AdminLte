@@ -1,0 +1,1 @@
+"use strict";define(["app"],function(app){app.filter("escapeHTML",function(){return function(text){return text.replace(/'/g,"&apos").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}}),app.filter("trustedHtml",["$sce",function($sce){var div=document.createElement("div");return function(text){return div.innerHTML=text,$sce.trustAsHtml(div.textContent)}}])});

@@ -1,0 +1,1 @@
+"use strict";define(["app"],function(app){var injectParams=["$scope","$state","$rootScope","AppConfig","RestService"],graphController=function($scope,$state,$rootScope,AppConfig,RestService){};graphController.$inject=injectParams,app.controller("GraphCtrl",graphController)});

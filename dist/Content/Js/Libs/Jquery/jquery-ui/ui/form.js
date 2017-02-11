@@ -1,0 +1,1 @@
+!function(factory){"function"==typeof define&&define.amd?define(["jquery","./version"],factory):factory(jQuery)}(function($){return $.fn.form=function(){return"string"==typeof this[0].form?this.closest("form"):$(this[0].form)}});

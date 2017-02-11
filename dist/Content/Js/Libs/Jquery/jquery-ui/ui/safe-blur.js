@@ -1,0 +1,1 @@
+!function(factory){"function"==typeof define&&define.amd?define(["jquery","./version"],factory):factory(jQuery)}(function($){return $.ui.safeBlur=function(element){element&&"body"!==element.nodeName.toLowerCase()&&$(element).trigger("blur")}});

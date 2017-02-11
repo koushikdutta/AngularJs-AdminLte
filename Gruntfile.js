@@ -67,7 +67,7 @@ module.exports = function (grunt) {
                 options: {
                     'no-write': false
                 },
-                src: ['./dist/**', './src/Content/Js/Libs/RequireJs/**/*', './src/Content/Js/Libs/AdminLTE/**/*', './src/Content/Js/Libs/Angular/**/*', './src/Content/Js/Libs/Bootstrap/**/*', './src/Content/Js/Libs/jointJsBundle/**/*', './src/Content/Js/Libs/Jquery/**/*', './src/Content/Css/Libs/**/*', './src/Content/Fonts/**/*']
+                src: ['./dist/*', './src/Content/Js/Libs/RequireJs/**/*', './src/Content/Js/Libs/AdminLTE/**/**/*', './src/Content/Js/Libs/Angular/**/*', './src/Content/Js/Libs/Bootstrap/**/*', './src/Content/Js/Libs/jointJsBundle/**/*', './src/Content/Js/Libs/Jquery/**/**/*', './src/Content/Css/Libs/**/*', './src/Content/Fonts/**/*']
             }
         },
         copy: {
@@ -134,8 +134,8 @@ module.exports = function (grunt) {
     });
 
     // Register Task List... [BuidWeb], [ClearBuild], [Clean]
-    grunt.registerTask('buildweb', ['bowercopy', 'copy:srcTodist', 'clean:other', 'uglify', 'cssmin', 'htmlmin']);
-    grunt.registerTask('clearbuildweb', ['clean:main', 'clean:other', 'buildweb']);
+    grunt.registerTask('buildweb', ['clean:other', 'bowercopy', 'copy:srcTodist', 'uglify', 'cssmin', 'htmlmin']);
+    grunt.registerTask('clearbuildweb', ['clean:main', 'buildweb']);
     grunt.registerTask('clearbuild', ['clean:main']);
     //
 };

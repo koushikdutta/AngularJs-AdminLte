@@ -1,0 +1,1 @@
+!function(factory){"function"==typeof define&&define.amd?define(["jquery","../version","../effect","./effect-scale"],factory):factory(jQuery)}(function($){return $.effects.define("puff","hide",function(options,done){var newOptions=$.extend(!0,{},options,{fade:!0,percent:parseInt(options.percent,10)||150});$.effects.effect.scale.call(this,newOptions,done)})});

@@ -1,0 +1,1 @@
+!function(factory){"function"==typeof define&&define.amd?define(["jquery","../version","../effect"],factory):factory(jQuery)}(function($){var effect;return $.uiBackCompat!==!1&&(effect=$.effects.define("transfer",function(options,done){$(this).transfer(options,done)})),effect});

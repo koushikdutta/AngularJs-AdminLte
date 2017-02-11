@@ -1,0 +1,1 @@
+"use strict";define(["app"],function(app){app.filter("toArray",function(){return function(obj){return obj instanceof Object?_.map(obj,function(val,key){return Object.defineProperty(val,"$key",{__proto__:null,value:key})}):obj}})});

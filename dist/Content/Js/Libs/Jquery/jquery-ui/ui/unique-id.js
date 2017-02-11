@@ -1,0 +1,1 @@
+!function(factory){"function"==typeof define&&define.amd?define(["jquery","./version"],factory):factory(jQuery)}(function($){return $.fn.extend({uniqueId:function(){var uuid=0;return function(){return this.each(function(){this.id||(this.id="ui-id-"+ ++uuid)})}}(),removeUniqueId:function(){return this.each(function(){/^ui-id-\d+$/.test(this.id)&&$(this).removeAttr("id")})}})});

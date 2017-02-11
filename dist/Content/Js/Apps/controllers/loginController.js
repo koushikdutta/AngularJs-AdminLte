@@ -1,0 +1,1 @@
+"use strict";define(["app"],function(app){var injectParams=["$scope","$state","$rootScope","AppConfig"],loginController=function($scope,$state,$rootScope,AppConfig){$scope.doLogin=function(){$state.go("app.dashboard")}};loginController.$inject=injectParams,app.controller("LoginCtrl",loginController)});
