@@ -8,7 +8,8 @@ define([], function () {
         'ngIdle', // Idle timer
         'ngSanitize', // ngSanitize
         'ngResource',
-        'dialogs.main'
+        'dialogs.main',
+        'blockUI' //blockUI
     ]);
     var enableLog = true;
     app.run(['$rootScope', '$location', function ($rootScope, $location) {
@@ -43,6 +44,16 @@ define([], function () {
                             function (event, viewConfig) {
                                 //console.log("View Load: the view is loaded, and DOM rendered!");
                             });
+        }]);
+    app.config(['blockUIConfig', function (blockUIConfig) {
+            // Change the default overlay message
+            blockUIConfig.message = 'Please wait';
+            // Change the default delay to 100ms before the blocking is visible
+            blockUIConfig.delay = 100;
+            // Provide a custom template to use
+            //blockUIConfig.template = '<pre><code>{{ state | json }}</code></pre>';
+            // Disable automatically blocking of the user interface
+            //blockUIConfig.autoBlock = false;
         }]);
     app.run(['$http',
         function ($http) {
